@@ -1,4 +1,4 @@
-export const structureOne = {
+export const structureTwo = {
     title: 'app',
     type: 'folder',
     active: true,
@@ -111,19 +111,43 @@ export const structureOne = {
                             active: false,
                             children: [
                                 {
-                                    title: 'buttons',
+                                    title: 'primitive',
                                     type: 'folder',
                                     active: false,
+                                    children: [
+                                        {
+                                            title: 'buttons',
+                                            type: 'folder',
+                                            active: false,
+                                        },
+                                        {
+                                            title: 'badges',
+                                            type: 'folder',
+                                            active: false,
+                                        },
+                                    ]
                                 },
                                 {
-                                    title: 'modals',
+                                    title: 'complex',
                                     type: 'folder',
                                     active: false,
+                                    children: [
+                                        {
+                                            title: 'calendar',
+                                            type: 'folder',
+                                            active: false,
+                                        },
+                                        {
+                                            title: 'modals',
+                                            type: 'folder',
+                                            active: false,
+                                        },
+                                    ]
                                 },
                             ]
                         },
                         {
-                            title: 'modules',
+                            title: 'pages',
                             type: 'folder',
                             active: false,
                             children: [
@@ -133,64 +157,10 @@ export const structureOne = {
                                     active: false,
                                     children: [
                                         {
-                                            title: '__tests__',
-                                            type: 'folder',
-                                            active: false,
-                                        },
-                                        {
-                                            title: 'services',
-                                            type: 'folder',
-                                            active: false,
-                                        },
-                                        {
-                                            title: 'enums',
-                                            type: 'folder',
-                                            active: false,
-                                        },
-                                        {
-                                            title: 'utils',
-                                            type: 'folder',
-                                            active: false,
-                                        },
-                                        {
-                                            title: 'components',
+                                            title: 'common',
                                             type: 'folder',
                                             active: false,
                                             children: [
-                                                {
-                                                    title: 'userLogs',
-                                                    type: 'folder',
-                                                    active: false,
-                                                    children: [
-                                                        {
-                                                            title: 'LogList',
-                                                            type: 'vue',
-                                                            active: false,
-                                                        },
-                                                        {
-                                                            title: 'LogListItem',
-                                                            type: 'vue',
-                                                            active: false,
-                                                        },
-                                                    ]
-                                                },
-                                                {
-                                                    title: 'userCard',
-                                                    type: 'folder',
-                                                    active: false,
-                                                    children: [
-                                                        {
-                                                            title: 'UserAvatar',
-                                                            type: 'vue',
-                                                            active: false,
-                                                        },
-                                                        {
-                                                            title: 'UserAchievements',
-                                                            type: 'vue',
-                                                            active: false,
-                                                        },
-                                                    ]
-                                                },
                                                 {
                                                     title: 'UserDescription',
                                                     type: 'vue',
@@ -203,6 +173,52 @@ export const structureOne = {
                                                 },
                                             ]
                                         },
+                                        {
+                                            title: 'userLogs',
+                                            type: 'folder',
+                                            active: false,
+                                            children: [
+                                                {
+                                                    title: 'LogList',
+                                                    type: 'vue',
+                                                    active: false,
+                                                },
+                                                {
+                                                    title: 'LogListItem',
+                                                    type: 'vue',
+                                                    active: false,
+                                                },
+                                            ]
+                                        },
+                                        {
+                                            title: 'userCard',
+                                            type: 'folder',
+                                            active: false,
+                                            children: [
+                                                {
+                                                    title: 'UserAvatar',
+                                                    type: 'vue',
+                                                    active: false,
+                                                },
+                                                {
+                                                    title: 'UserAchievements',
+                                                    type: 'vue',
+                                                    active: false,
+                                                },
+                                            ]
+                                        },
+                                        {
+                                            title: 'UserCard',
+                                            type: 'vue',
+                                        },
+                                        {
+                                            title: 'UserCardEdit',
+                                            type: 'vue',
+                                        },
+                                        {
+                                            title: 'UserLogs',
+                                            type: 'vue',
+                                        },
                                     ]
                                 },
                                 {
@@ -211,12 +227,7 @@ export const structureOne = {
                                     active: false,
                                     children: [
                                         {
-                                            title: '__tests__',
-                                            type: 'folder',
-                                            active: false,
-                                        },
-                                        {
-                                            title: 'components',
+                                            title: 'common',
                                             type: 'folder',
                                             active: false,
                                             children: [
@@ -227,7 +238,27 @@ export const structureOne = {
                                                 },
                                             ]
                                         },
+                                        {
+                                            title: 'NewsList',
+                                            type: 'vue',
+                                        },
+                                        {
+                                            title: 'NewsEdit',
+                                            type: 'vue',
+                                        },
+                                        {
+                                            title: 'NewsItem',
+                                            type: 'vue',
+                                        },
                                     ]
+                                },
+                                {
+                                    title: 'Login',
+                                    type: 'vue',
+                                },
+                                {
+                                    title: 'NotFound',
+                                    type: 'vue',
                                 },
                             ]
                         },
@@ -239,14 +270,21 @@ export const structureOne = {
                     active: false,
                     children: [
                         {
-                            title: 'locales',
+                            title: 'components',
                             type: 'folder',
                             active: false,
-                        },
-                        {
-                            title: 'mocks',
-                            type: 'folder',
-                            active: false,
+                            children: [
+                                {
+                                    title: 'locales',
+                                    type: 'folder',
+                                    active: false,
+                                },
+                                {
+                                    title: 'mocks',
+                                    type: 'folder',
+                                    active: false,
+                                },
+                            ]
                         },
                     ],
                 },
@@ -255,11 +293,6 @@ export const structureOne = {
                     type: 'folder',
                     active: false,
                     children: [
-                        {
-                            title: '__test__',
-                            type: 'folder',
-                            active: false,
-                        },
                         {
                             title: 'api',
                             type: 'folder',
@@ -368,13 +401,26 @@ export const structureOne = {
                     ],
                 },
                 {
-                    title: 'utils',
+                    title: 'helpers',
                     type: 'folder',
                     active: false,
                     children: [
                         {
-                            title: '__test__',
+                            title: 'modules',
                             type: 'folder',
+                            active: false,
+                            children: [
+                                {
+                                    title: 'user',
+                                    type: 'folder',
+                                    active: false,
+                                },
+                                {
+                                    title: 'news',
+                                    type: 'folder',
+                                    active: false,
+                                }
+                            ]
                         },
                         {
                             title: 'createTree',
@@ -416,17 +462,19 @@ export const structureOne = {
                             active: false,
                             children: [
                                 {
-                                    title: 'modules',
+                                    title: 'pages',
                                     type: 'folder',
                                     active: false,
                                     children: [
                                         {
                                             title: 'user',
-                                            type: 'js',
+                                            type: 'scss',
+                                            active: false,
                                         },
                                         {
                                             title: 'news',
-                                            type: 'js',
+                                            type: 'scss',
+                                            active: false,
                                         },
                                     ]
                                 },
@@ -445,59 +493,6 @@ export const structureOne = {
                         {
                             title: 'main',
                             type: 'scss',
-                        },
-                    ],
-                },
-                {
-                    title: 'views',
-                    type: 'folder',
-                    active: false,
-                    children: [
-                        {
-                            title: 'user',
-                            type: 'folder',
-                            active: false,
-                            children: [
-                                {
-                                    title: 'UserCard',
-                                    type: 'vue',
-                                },
-                                {
-                                    title: 'UserCardEdit',
-                                    type: 'vue',
-                                },
-                                {
-                                    title: 'UserLogs',
-                                    type: 'vue',
-                                },
-                            ]
-                        },
-                        {
-                            title: 'news',
-                            type: 'folder',
-                            active: false,
-                            children: [
-                                {
-                                    title: 'NewsList',
-                                    type: 'vue',
-                                },
-                                {
-                                    title: 'NewsEdit',
-                                    type: 'vue',
-                                },
-                                {
-                                    title: 'NewsItem',
-                                    type: 'vue',
-                                },
-                            ]
-                        },
-                        {
-                            title: 'Login',
-                            type: 'vue',
-                        },
-                        {
-                            title: 'NotFound',
-                            type: 'vue',
                         },
                     ],
                 },
